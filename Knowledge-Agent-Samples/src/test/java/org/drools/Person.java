@@ -43,7 +43,7 @@ public class Person
     private Cheese cheese;
 
     private Address address;
-    private Pet pet;
+    private List<Pet> pets = new ArrayList<Pet>();
 
     public Address getAddress() {
         return address;
@@ -297,12 +297,12 @@ public class Person
     }
 
 
-    public Pet getPet() {
-        return pet;
+    public List<Pet> getPets() {
+        return pets;
     }
 
-    public void setPet(Pet pet) {
-        this.pet = pet;
+    public void setPets(List<Pet> pets) {
+        this.pets = pets;
     }
 
     public void setCheese(final Cheese cheese) {
